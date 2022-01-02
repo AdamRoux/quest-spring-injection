@@ -7,7 +7,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class WizardRepository implements WizardDao {
+
 
     private static List<Wizard> wizards = new ArrayList<>(
             Arrays.asList(
